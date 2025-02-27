@@ -189,19 +189,23 @@ export default function Index(props) {
                                                                         <i className="fas fa-pencil-alt"></i>
                                                                     </span>
                                                                 </button>
-                                                                <button
-                                                                    type="button"
-                                                                    onClick={() =>
-                                                                        openDestroyDialog(
-                                                                            emprestimo
-                                                                        )
-                                                                    }
-                                                                    className="btn btn-youtube btn-icon-only"
-                                                                >
-                                                                    <span className="btn-inner--icon">
-                                                                        <i className="fas fa-trash"></i>
-                                                                    </span>
-                                                                </button>
+
+                                                                {emprestimo.situacao !=
+                                                                    0 && (
+                                                                    <button
+                                                                        type="button"
+                                                                        onClick={() =>
+                                                                            openDestroyDialog(
+                                                                                emprestimo
+                                                                            )
+                                                                        }
+                                                                        className="btn btn-youtube btn-icon-only"
+                                                                    >
+                                                                        <span className="btn-inner--icon">
+                                                                            <i className="ni ni-paper-diploma"></i>
+                                                                        </span>
+                                                                    </button>
+                                                                )}
                                                             </div>
                                                         </td>
                                                     </tr>

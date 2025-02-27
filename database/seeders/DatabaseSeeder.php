@@ -23,5 +23,23 @@ class DatabaseSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
         ]);
+
+        DB::table('usuarios_biblioteca')->insert([
+            'nome' => 'Usuário 1',
+            'email' => 'usuario1@sistema.com',
+            'endereco' => 'Rua dos Bobos, 0',
+            'telefone' => '123456789',
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+
+        DB::table('livros')->insert([
+            'nome' => 'livro 1',
+            'autor' => 'Autor 1',
+            'genero' => 'Humor',
+            'situacao' => 0,
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
     }
 }

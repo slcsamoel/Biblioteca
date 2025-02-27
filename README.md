@@ -4,8 +4,9 @@
 
 ### Prerequisites
 
-install > php8 Composer & NodeJs -[php](https://www.php.net/downloads)
+install & php8 Composer & NodeJs
 
+-   [php](https://www.php.net/downloads)
 -   [Composer](https://getcomposer.org/doc/00-intro.md)
 -   [Node Js](https://nodejs.org/en/download/)
 
@@ -43,5 +44,5 @@ install > php8 Composer & NodeJs -[php](https://www.php.net/downloads)
 2. Usuario Admin
     ```sh
     email 'admin@sistema.com'
-    password '123456'
+    password '12345678'
     ```

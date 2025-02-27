@@ -64,7 +64,7 @@ export default function Sidebar() {
                             href={route("livros.index")}
                         >
                             <div className="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                                <i className="fas fa-user-tie text-warning text-sm opacity-10" />
+                                <i className="ni ni-paper-diploma text-warning text-sm opacity-10" />
                             </div>
                             <span className="nav-link-text ms-1">Livros</span>
                         </Link>
@@ -76,7 +76,7 @@ export default function Sidebar() {
                             href={route("emprestimos.index")}
                         >
                             <div className="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                                <i className="fas fa-user-tie text-warning text-sm opacity-10" />
+                                <i className="ni ni-money-coins text-warning text-sm opacity-10" />
                             </div>
                             <span className="nav-link-text ms-1">
                                 Emprestimos
