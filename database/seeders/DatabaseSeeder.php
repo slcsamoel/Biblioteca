@@ -6,7 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Carbon;
+use DateTime; 
 
 class DatabaseSeeder extends Seeder
 {
@@ -21,8 +21,8 @@ class DatabaseSeeder extends Seeder
             'name' => 'Administrador',
             'email' => 'admin@sistema.com',
             'password' => Hash::make('12345678'),
-            'created_at' => now() ?: \Carbon\Carbon::now(),
-            'updated_at' => now() ?: \Carbon\Carbon::now(),
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime(),
         ]);
 
         DB::table('usuarios_biblioteca')->insert([
@@ -30,8 +30,8 @@ class DatabaseSeeder extends Seeder
             'email' => 'usuario1@sistema.com',
             'endereco' => 'Rua dos Bobos, 0',
             'telefone' => '123456789',
-            'created_at' => now() ?: \Carbon\Carbon::now(),
-            'updated_at' => now() ?: \Carbon\Carbon::now(),
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime(),
         ]);
 
         DB::table('livros')->insert([
@@ -39,8 +39,8 @@ class DatabaseSeeder extends Seeder
             'autor' => 'Autor 1',
             'genero' => 'Humor',
             'situacao' => 0,
-            'created_at' => now() ?: \Carbon\Carbon::now(),
-            'updated_at' => now() ?: \Carbon\Carbon::now(),
+            'created_at' => new DateTime(),
+            'updated_at' => new DateTime(),
         ]);
     }
 }

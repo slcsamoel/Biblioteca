@@ -20,6 +20,12 @@ install & php8 Composer & NodeJs
 3. Install NPM packages
     ```sh
     npm install
+    ```
+    Caso tenha erro na instalação usar o comando 
+    ```sh
+    npm install --legacy-peer-deps
+    ```
+    ```sh
     npm run dev
     ```
 4. Create table corresponds to .env
